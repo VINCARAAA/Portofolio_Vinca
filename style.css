@@ -539,3 +539,54 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Assistant Practicum Documentation */
+.experience-card {
+    padding: 35px;
+    border: 1px solid #e0e4eb;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.documentation {
+    margin-top: 25px;
+}
+
+.documentation h3 {
+    margin-bottom: 15px;
+}
+
+.documentation-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.documentation-item {
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f3f5f8;
+}
+
+.documentation-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.documentation-item p {
+    padding: 12px 15px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .experience-card {
+        padding: 20px;
+    }
+
+    .documentation-gallery {
+        grid-template-columns: 1fr;
+    }
+}
