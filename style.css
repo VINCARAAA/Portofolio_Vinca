@@ -571,9 +571,11 @@ footer {
 
 .documentation-item img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    aspect-ratio:16 /9 ;
+    object-fit: contain;
     display: block;
+    border-radius: 10px;
+    backgraound: #f3f5f8;
 }
 
 .documentation-item p {
