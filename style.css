@@ -441,3 +441,49 @@ footer {
     }
 }
 
+
+/* ACTIVITY DOCUMENTATION */
+.documentation {
+    margin-top: 25px;
+}
+
+.documentation h4 {
+    color: #1e3a5f;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.documentation-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.documentation-item {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f5f7fa;
+}
+
+.documentation-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.documentation-item p {
+    padding: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .documentation-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .documentation-item img {
+        height: 220px;
+    }
+}
