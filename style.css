@@ -559,36 +559,34 @@ footer {
 
 .documentation-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
 }
 
 .documentation-item {
-    overflow: hidden;
-    border-radius: 10px;
     background: #f3f5f8;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
 }
 
 .documentation-item img {
     width: 100%;
-    height:auto;
-    object-fit: contain;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
     display: block;
-    border-radius: 10px;
-    backgraound: #f3f5f8;
 }
 
 .documentation-item p {
     padding: 12px 15px;
     margin: 0;
+    line-height: 1.5;
 }
 
 @media (max-width: 600px) {
-    .experience-card {
-        padding: 20px;
-    }
-
-    .documentation-gallery {
+.documentation-gallery {
         grid-template-columns: 1fr;
     }
 }
