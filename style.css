@@ -578,24 +578,4 @@ footer {
     display: block;
     background: #f3f5f8;
 }
- /* Assistant Practicum Optimization Documentation */
-.asprakop-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    max-height: 650px;
-}
 
-.asprakop-item {
-    background: #f3f5f8;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.asprakop-item img {
-    width: 100%;
-    height: 150;
-    object-fit: contain;
-    display: block;
-    background: #f3f5f8;
-}
