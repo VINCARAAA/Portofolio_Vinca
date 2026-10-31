@@ -49,6 +49,7 @@ uploadInput?.addEventListener('change',()=>{
 });
 
 
+
 document.querySelectorAll(".portfolio-carousel").forEach((carousel) => {
     const track = carousel.querySelector(".portfolio-track");
     const prev = carousel.querySelector(".carousel-arrow.prev");
@@ -56,16 +57,24 @@ document.querySelectorAll(".portfolio-carousel").forEach((carousel) => {
 
     if (!track || !prev || !next) return;
 
+    function getScrollAmount() {
+        const photo = track.querySelector(".portfolio-photo");
+        if (!photo) return 300;
+
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+        return photo.getBoundingClientRect().width + gap;
+    }
+
     prev.addEventListener("click", () => {
         track.scrollBy({
-            left: -300,
+            left: -getScrollAmount(),
             behavior: "smooth"
         });
     });
 
     next.addEventListener("click", () => {
         track.scrollBy({
-            left: 300,
+            left: getScrollAmount(),
             behavior: "smooth"
         });
     });
