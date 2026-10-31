@@ -132,3 +132,36 @@
         height: 160px;
     }
 }
+
+/* Tambahkan ini pada container utama atau body untuk mencegah scroll ke samping */
+body, .main-container {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Pastikan container galeri gambar di bawah menggunakan flex-wrap agar gambar turun ke bawah saat layar sempit */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Ini akan mencegah gambar memanjang lurus ke kanan melewati margin */
+    justify-content: center;
+    gap: 15px; /* Jarak antar gambar */
+    width: 100%;
+    max-width: 1200px; /* Batasi lebar maksimal sesuai layout */
+    margin: 0 auto; /* Menaruh kontainer tepat di tengah */
+}
+
+/* Pastikan gambar di dalamnya bersifat responsif */
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Pastikan tombol berada di layer paling atas agar bisa menerima klik */
+.button-class, .nav-links a {
+    position: relative;
+    z-index: 10; 
+    cursor: pointer; /* Memastikan kursor berubah menjadi tangan saat diarahkan ke tombol */
+}
+
+
