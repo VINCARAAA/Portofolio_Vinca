@@ -596,17 +596,18 @@ footer {
     margin-bottom: 15px;
 }
 .asprakop-item p {
-    padding: 10px 12px;
+    padding: 12px 15px;
     margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 @media (max-width: 600px) {
-	.asprakop-gallery {
-        grid-template-columns: 1fr;
+.asprakop-gallery {
+        display:grid;
+        grid-template-columns: repeat (2,minmax(0, 1fr));
+        gap: 15px;
+        max-width: 650px;
     }
-	.asprakop-item img {
+.asprakop-item img {
         height: 170px;
     }    
 }
