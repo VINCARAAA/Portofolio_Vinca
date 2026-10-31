@@ -49,3 +49,30 @@
 .lightbox-close{position:absolute;top:18px;right:25px;border:0;background:transparent;color:#fff;font-size:38px;cursor:pointer}
 @media(max-width:760px){.organization-dashboard{grid-template-columns:1fr 1fr}.organization-dashboard-intro{grid-column:1/-1}.organization-stat:first-of-type{border-left:0;padding-left:0}.certificate-grid{grid-template-columns:1fr}.portfolio-card{padding:20px}}
 @media(max-width:520px){.portfolio-carousel{gap:6px}.carousel-arrow{width:29px;height:29px;flex-basis:29px;font-size:21px}.portfolio-photo{flex-basis:88%;min-width:0}.standard-photo img{height:170px}.organization-dashboard{padding:20px}}
+
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.certificate-card {
+    min-width: 0;
+    width: 100%;
+}
+
+/* Tampilan tablet */
+@media (max-width: 900px) {
+    .certificate-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+}
