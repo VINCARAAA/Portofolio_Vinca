@@ -550,7 +550,7 @@ footer {
 }
 
 .documentation {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .documentation h3 {
@@ -560,28 +560,28 @@ footer {
 .documentation-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    align-items: stretch;
+    gap: 15px;
+    max-height: 650px;
 }
 
 .documentation-item {
     background: #f3f5f8;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    height: 100%;
 }
 
 .documentation-item img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    object-fit: cover;
+    height: 150;
+    object-fit: contain;
     display: block;
+    background: #f3f5f8;
 }
 
 .documentation-item p {
-    padding: 12px 15px;
+    padding: 10px 12px;
     margin: 0;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -589,4 +589,7 @@ footer {
 .documentation-gallery {
         grid-template-columns: 1fr;
     }
+.documentation-item img {
+        height: 170px;
+    }    
 }
