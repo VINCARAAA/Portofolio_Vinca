@@ -239,8 +239,9 @@ html, body {
 
 .project-image {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 220px;
     overflow: hidden;
+    border-radius: 12px 12px 0 0;
     background: #f0f2f5;
 }
 
@@ -248,8 +249,9 @@ html, body {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .project-card:hover .project-image img {
@@ -309,4 +311,39 @@ html, body {
     }
 }
 
+
+
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-card {
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.project-content {
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
