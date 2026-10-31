@@ -1,397 +1,167 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Vinca Rahmawati | Personal Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinca Rahmawati | Personal Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="portfolio-enhancements.css">
 </head>
-
 <body>
- 
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">VINCA<span>,</span></a>
+<header>
+<nav class="navbar">
+<a href="#home" class="logo">VINCA<span>,</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li><li><a href="#work-experience">Work</a></li>
+<li><a href="#organization-experience">Organization</a></li><li><a href="#practicum-experience">Practicum</a></li>
+<li><a href="#skills">Skills</a></li><li><a href="#certificates">Certificates</a></li>
+<li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-            <button class="menu-toggle" id="menuToggle"
-                aria-label="Buka menu" aria-expanded="false">
-                ☰
-            </button>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- HOME -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-            <p class="greeting">WELCOME TO MY PORTFOLIO</p>
-
-            <h1>Vinca Rahmawati</h1>
-
-            <h2>Mathematics Graduate |
-                Data Analytics Enthusiast
-            </h2>
-
-            <p class="hero-description">
-                A Mathematics graduate from the Institut Teknologi Sumatera with a strong interest in data analysis, statistics, mathematical modeling, and computational methods.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#about" class="btn-primary">
-                    Explore More
-                </a>
-
-                <a href="assets/CV ATS Friendly[26]_Vinca Rahmawati.pdf"
-                   class="btn-outline" target="_blank">
-                    View My CV
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <img src="assets/yang ini-1mb.jpeg"
-                 alt="Foto Vinca Rahmawati">
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-
-        <div class="section-heading">
-            <p>INTRODUCTION</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-content">
-            <p>
-                I am a graduate of the Mathematics Study Program, 
-                Faculty of Science, Institut Teknologi Sumatera, 
-                with a focus on data analysis, statistics, time series analysis, optimization, and computational methods.
-            </p>
-
-            <p>
-                
-            </p>
-        </div>I have experience as a laboratory teaching assistant, tutor, and intern at the BMKG Lampung Climatology Station. These experiences have strengthened my analytical, communication, teamwork, and problem-solving skills.
-
-    </section>
-
-
-    <!-- EDUCATION -->
-    <section class="section section-light" id="education">
-
-        <div class="section-heading">
-            <p>ACADEMIC BACKGROUND</p>
-            <h2>Education</h2>
-        </div>
-
-        <div class="info-card">
-            <h3>Institut Teknologi Sumatera</h3>
-
-            <p class="card-subtitle">
-                Bachelor of Mathematics (S.Mat.)
-            </p>
-
-            <p>Faculty of Science | 2022–2026</p>
-
-            <p>IPK: 3,36 / 4,00</p>
-
-            <p>
-                Areas of Expertise: Statistics, Data Analysis, Time Series Analysis, Optimization, and Mathematical Modeling.
-            </p>
-        </div>
-        <div class="thesis-info">
-    <h4>Final Project / Undergraduate Thesis</h4>
-
-    <p>
-        Implementation of SARIMA Method for Rainfall
-        Prediction as a Basis for Planting Calendar Recommendations
-    </p>
-
-    <a href="https://repo.itera.ac.id/depan/submission/SB2606050069"
-       target="_blank"
-       class="thesis-link">
-        View Undergraduate Thesis →
-    </a>
-</div> 
-
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="greeting">WELCOME TO MY PORTFOLIO</p><h1>Vinca Rahmawati</h1>
+<h2>Mathematics Graduate | Data Analytics Enthusiast</h2>
+<p class="hero-description">A Mathematics graduate from the Institut Teknologi Sumatera with a strong interest in data analysis, statistics, mathematical modeling, and computational methods.</p>
+<div class="hero-buttons"><a href="#about" class="btn-primary">Explore More</a>
+<a href="assets/CV ATS Friendly[26]_Vinca Rahmawati.pdf" class="btn-outline" target="_blank" rel="noopener">View My CV</a></div>
+</div>
+<div class="hero-image"><img src="assets/yang ini-1mb.jpeg" alt="Vinca Rahmawati"></div>
 </section>
 
+<section class="section" id="about">
+<div class="section-heading"><p>INTRODUCTION</p><h2>About Me</h2></div>
+<div class="about-content">
+<p>I am a graduate of the Mathematics Study Program, Faculty of Science, Institut Teknologi Sumatera, with a focus on data analysis, statistics, time series analysis, optimization, and computational methods.</p>
+<p>I have experience as a laboratory teaching assistant, tutor, and intern at the BMKG Lampung Climatology Station. These experiences have strengthened my analytical, communication, teamwork, and problem-solving skills.</p>
+</div></section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
+<section class="section section-light" id="education">
+<div class="section-heading"><p>ACADEMIC BACKGROUND</p><h2>Education</h2></div>
+<div class="info-card"><h3>Institut Teknologi Sumatera</h3><p class="card-subtitle">Bachelor of Mathematics (S.Mat.)</p>
+<p>Faculty of Science | 2022–2026</p><p>GPA: 3.36 / 4.00</p>
+<p>Areas of Expertise: Statistics, Data Analysis, Time Series Analysis, Optimization, and Mathematical Modeling.</p></div>
+<div class="thesis-info"><h4>Final Project / Undergraduate Thesis</h4>
+<p>Implementation of SARIMA Method for Rainfall Prediction as a Basis for Planting Calendar Recommendations</p>
+<a href="https://repo.itera.ac.id/depan/submission/SB2606050069" target="_blank" rel="noopener" class="thesis-link">View Undergraduate Thesis →</a></div>
+</section>
 
-        <div class="section-heading">
-            <p>PROFESSIONAL JOURNEY</p>
-            <h2>Experience Work and Organization</h2>
-            <h3>Experience Work</h3>
-        </div>
+<!-- WORK EXPERIENCE -->
+<section class="section" id="work-experience">
+<div class="section-heading"><p>PROFESSIONAL JOURNEY</p><h2>Work Experience</h2></div>
+<article class="portfolio-card">
+<div class="portfolio-card-heading"><div><h3>Internship – BMKG</h3><p class="portfolio-subtitle">BMKG Stasiun Klimatologi Lampung</p></div><span class="portfolio-date">July – August 2025</span></div>
+<p class="portfolio-description">Conducted daily weather observations, processed rainfall data, and participated in the weather forecast verification process.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Swipe or use the arrows</span></div>
+<div class="portfolio-carousel" data-carousel="bmkg">
+<button class="carousel-arrow prev" type="button" aria-label="Previous BMKG photo">‹</button>
+<div class="portfolio-track">
+<figure class="portfolio-photo bmkg-photo"><img src="assets/dokumentasi/bmkg2.png" alt="Daily Weather Observation"><figcaption>Daily Weather Observation</figcaption></figure>
+<figure class="portfolio-photo bmkg-photo"><img src="assets/dokumentasi/bmkg1.jpeg" alt="BMKG Internship Activities"><figcaption>BMKG Internship Activities</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next BMKG photo">›</button></div></div>
+</article></section>
 
-        <div class="experience-card">
-
-            <div class="info-card">
-                <h4>Internship - BMKG</h4>
-                <p class="card-subtitle">
-                    BMKG Stasiun Klimatologi Lampung
-                </p>
-                <p>July – August 2025</p>
-                <p>
-                    Conducted daily weather observations,
- processed rainfall data, and participated in the weather forecast verification process.
-
-                </p>
-                <!-- PHOTO DOCUMENTATION -->
-    <div class="documentation">
-        <h5>Activity Documentation</h5>
-
-        <div class="bmkg-gallery">
-            <div class="bmkg-item">
-                <img src="assets/dokumentasi/bmkg2.png"
-                     alt="Dokumentasi kegiatan magang BMKG">
-                <p>Daily Weather Observation</p>
-            </div>
-
-            <div class="bmkg-item">
-                <img src="assets/dokumentasi/bmkg1.jpeg"
-                     alt="Dokumentasi Kegiatan keseluruhan">
-                <p>BMKG Internship Activities</p>
-            </div>
-        </div>
-    </div>
+<!-- ORGANIZATION EXPERIENCE dashboard is immediately below work experience -->
+<section class="section section-light" id="organization-experience">
+<div class="section-heading"><p>LEADERSHIP & INVOLVEMENT</p><h2>Organization Experience</h2></div>
+<div class="organization-dashboard">
+<div class="organization-dashboard-intro"><span class="organization-kicker">ORGANIZATION DASHBOARD</span><h3>HIMATIKA ITERA</h3><p>Himpunan Mahasiswa Matematika, Institut Teknologi Sumatera</p></div>
+<div class="organization-stat"><strong>1</strong><span>Organization</span></div>
+<div class="organization-stat"><strong>2</strong><span>Positions held</span></div>
 </div>
-            </div>
+<div class="organization-roles">
+<article class="portfolio-card"><div class="portfolio-card-heading"><div><h3>Secretary of Department</h3><p class="portfolio-subtitle">HIMATIKA ITERA</p></div><span class="portfolio-date">[Year – Year]</span></div>
+<p class="portfolio-description">Managed departmental administration, prepared and organized documents, recorded meeting discussions, and supported coordination of departmental activities.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Swipe or use the arrows</span></div>
+<div class="portfolio-carousel"><button class="carousel-arrow prev" type="button" aria-label="Previous secretary photo">‹</button><div class="portfolio-track">
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/himatika-sekretaris-1.jpg" alt="HIMATIKA Secretary documentation"><figcaption>Department Activities</figcaption></figure>
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/himatika-sekretaris-2.jpg" alt="HIMATIKA Secretary documentation"><figcaption>Organizational Activities</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next secretary photo">›</button></div></div></article>
 
-            <!-- TIME SERIES ANALYSIS -->
-<div class="info-card">
+<article class="portfolio-card"><div class="portfolio-card-heading"><div><h3>DPA Staff</h3><p class="portfolio-subtitle">HIMATIKA ITERA</p></div><span class="portfolio-date">[Month Year – Month Year]</span></div>
+<p class="portfolio-description">Participated in organizational activities and carried out responsibilities as a DPA staff member. Update this description to reflect your actual duties.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Swipe or use the arrows</span></div>
+<div class="portfolio-carousel"><button class="carousel-arrow prev" type="button" aria-label="Previous DPA photo">‹</button><div class="portfolio-track">
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/himatika-dpa-1.jpg" alt="HIMATIKA DPA staff documentation"><figcaption>DPA Activities</figcaption></figure>
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/himatika-dpa-2.jpg" alt="HIMATIKA DPA staff documentation"><figcaption>Organizational Activities</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next DPA photo">›</button></div></div></article>
+</div></section>
 
-    <h4>Assistant Practicum</h4>
-    <p class="card-subtitle">Time Series Analysis</p>
-    <p>February – June 2026</p>
+<!-- PRACTICUM EXPERIENCE -->
+<section class="section" id="practicum-experience">
+<div class="section-heading"><p>ACADEMIC & TEACHING EXPERIENCE</p><h2>Practicum & Tutorial Experience</h2></div>
+<div class="practicum-list">
+<article class="portfolio-card"><div class="portfolio-card-heading"><div><h3>Assistant Practicum</h3><p class="portfolio-subtitle">Time Series Analysis</p></div><span class="portfolio-date">February – June 2026</span></div>
+<p class="portfolio-description">Assisted students in visualizing and analyzing time series data using RStudio and ARIMA and SARIMA methods.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Swipe or use the arrows</span></div><div class="portfolio-carousel"><button class="carousel-arrow prev" type="button" aria-label="Previous photo">‹</button><div class="portfolio-track">
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/asprak3.jpg" alt="Time Series Analysis Practicum"><figcaption>Time Series Analysis Practicum</figcaption></figure>
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/asprak2.jpg" alt="Time Series Analysis Project"><figcaption>Assisting on the Project</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next photo">›</button></div></div></article>
 
-    <p>
-        Assisted students in visualizing and analyzing time series
-        data using RStudio and ARIMA and SARIMA methods.
-    </p>
+<article class="portfolio-card"><div class="portfolio-card-heading"><div><h3>Assistant Practicum</h3><p class="portfolio-subtitle">Introduction to Optimization</p></div><span class="portfolio-date">September – December 2025</span></div>
+<p class="portfolio-description">Guided students in solving linear programming problems using QM for Windows, Desmos, and LINGO.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Swipe or use the arrows</span></div><div class="portfolio-carousel"><button class="carousel-arrow prev" type="button" aria-label="Previous photo">‹</button><div class="portfolio-track">
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/asprakop1.jpg" alt="Introduction to Optimization"><figcaption>Introduction to Optimization</figcaption></figure>
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/asprakop2.jpg" alt="Optimization software practicum"><figcaption>LINGO and QM for Windows</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next photo">›</button></div></div></article>
 
-    <div class="documentation">
-        <h5>Activity Documentation</h5>
+<article class="portfolio-card"><div class="portfolio-card-heading"><div><h3>Tutorial Assistant</h3><p class="portfolio-subtitle">Mathematics Basics</p></div><span class="portfolio-date">September – December 2025</span></div>
+<p class="portfolio-description">Assisted students in learning mathematics, provided practice exercises, and conducted evaluations of student assignments.</p>
+<div class="portfolio-gallery-section"><div class="portfolio-gallery-heading"><h4>Activity Documentation</h4><span>Add your activity photos here</span></div><div class="portfolio-carousel"><button class="carousel-arrow prev" type="button" aria-label="Previous photo">‹</button><div class="portfolio-track">
+<figure class="portfolio-photo standard-photo"><img src="assets/dokumentasi/tutorial1.jpg" alt="Mathematics Basics Tutorial"><figcaption>Mathematics Basics Tutorial</figcaption></figure>
+</div><button class="carousel-arrow next" type="button" aria-label="Next photo">›</button></div></div></article>
+</div></section>
 
-        <div class="asprak-gallery">
-            <div class="asprak-item">
-                <img src="assets/dokumentasi/asprak3.jpg"
-                     alt="Time Series Analysis Practicum">
-                <p>Time Series Analysis Practicum</p>
-            </div>
+<section class="section section-light" id="skills">
+<div class="section-heading"><p>MY COMPETENCIES</p><h2>Skills & Expertise</h2></div>
+<div class="skills-grid">
+<div class="skill-card"><h3>Technical Skills</h3><p>Python</p><p>RStudio</p><p>Microsoft Excel</p><p>Microsoft Word & PowerPoint</p><p>Desmos & QM for Windows</p></div>
+<div class="skill-card"><h3>Professional Skills</h3><p>Data Analysis</p><p>Statistical Analysis</p><p>Problem Solving</p><p>Communication</p><p>Teamwork & Creative Thinking</p></div>
+</div></section>
 
-            <div class="asprak-item">
-                <img src="assets/dokumentasi/asprak2.jpg"
-                     alt="Time Series Analysis Project">
-                <p>Assisting on the Project</p>
-            </div>
-        </div>
-    </div>
-
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+<div class="section-heading"><p>LEARNING & DEVELOPMENT</p><h2>Certificates</h2></div>
+<div class="certificate-grid">
+<article class="certificate-card">
+<button class="certificate-preview" type="button" data-preview="assets/certificates/sertifikat-data-analytics.png" aria-label="Preview Data Analytics certificate">
+<img src="assets/certificates/sertifikat-data-analytics.png" alt="Data Analytics certificate"></button>
+<div class="certificate-info"><h3>Wawasan Karir dalam Bidang Data Analytics</h3><p>Digital Talent Scholarship 2026</p><p>Kementerian Komunikasi dan Digital</p>
+<a href="assets/certificates/sertifikat-data-analytics.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article>
+<article class="certificate-card">
+<button class="certificate-preview" type="button" data-preview="assets/certificates/sertifikat-python.png" aria-label="Preview Python certificate">
+<img src="assets/certificates/sertifikat-python.png" alt="Python training certificate"></button>
+<div class="certificate-info"><h3>Pelatihan Python</h3><p>Institut Teknologi Sumatera</p><a href="assets/certificates/sertifikat-python.pdf" target="_blank" rel="noopener">Open certificate PDF ↗</a></div></article>
 </div>
+<div class="certificate-upload"><h3>Add certificate image (preview)</h3>
+<p>Select an image to preview it in this browser. To publish it for everyone, copy it into assets/certificates and update its path in index.html.</p>
+<label for="certificateUpload" class="upload-button">Choose certificate image</label>
+<input id="certificateUpload" type="file" accept="image/png,image/jpeg,image/webp">
+<div id="certificateUploadPreview" class="upload-preview" aria-live="polite"></div></div>
+</section>
 
-
-<!-- INTRODUCTION TO OPTIMIZATION -->
-<div class="info-card">
-
-    <h4>Assistant Practicum</h4>
-    <p class="card-subtitle">Introduction to Optimization</p>
-    <p>September – December 2025</p>
-
-    <p>
-        Guided students in solving linear programming problems
-        using QM for Windows, Desmos, and LINGO.
-    </p>
-
-    <div class="documentation">
-        <h5>Activity Documentation</h5>
-
-        <div class="asprakop-gallery">
-            <div class="asprakop-item">
-                <img src="assets/dokumentasi/asprakop1.jpg"
-                     alt="Introduction to Optimization Practicum">
-                <p>Introduction to Optimization</p>
-            </div>
-
-            <div class="asprakop-item">
-                <img src="assets/dokumentasi/asprakop2.jpg"
-                     alt="Optimization Software Practicum">
-                <p>Introduction to LINGO and QM for Windows</p>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<!-- MATHEMATICS BASICS -->
-<div class="info-card">
-
-    <h4>Tutorial Assistant</h4>
-    <p class="card-subtitle">Mathematics Basics</p>
-    <p>September – December 2025</p>
-
-    <p>
-        Assisted students in learning mathematics, provided practice
-        exercises, and conducted evaluations of student assignments.
-    </p>
-
-    <div class="documentation">
-        <h5>Activity Documentation</h5>
-
-        <div class="asprak-gallery">
-            <div class="asprak-item">
-                <img src="assets/dokumentasi/tutorial1.jpg"
-                     alt="Mathematics Basics Tutorial Activities">
-                <p>Mathematics Basics Tutorial</p>
-            </div>
-        </div>
-    </div>
+<div class="certificate-lightbox" id="certificateLightbox" aria-hidden="true">
+<button type="button" class="lightbox-close" aria-label="Close preview">&times;</button>
+<img id="lightboxImage" src="" alt="Certificate preview">
 </div>
 
-    </section>
+<section class="section section-light" id="projects">
+<div class="section-heading"><p>MY WORK</p><h2>Projects</h2></div>
+<div class="info-card"><h3>Data Analysis & Mathematical Projects</h3><p>Documentation of data analysis, mathematical modeling, and computational projects completed during my studies.</p><p class="project-note">Add images, descriptions, and links to projects that you have actually created.</p></div>
+</section>
 
+<section class="section contact-section" id="contact">
+<div class="section-heading"><p>GET IN TOUCH</p><h2>Contact Me</h2></div>
+<p>Thank you for visiting my portfolio. Please feel free to contact me for further information or collaboration opportunities.</p>
+<div class="contact-links"><a href="mailto:vincarahmawati04@gmail.com">Email Me</a>
+<a href="https://www.linkedin.com/in/vinca-rahmawati-ba5b3a265/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+</section>
+<footer><p>© 2026 Vinca Rahmawati. All Rights Reserved.</p></footer>
 
-    <!-- SKILLS -->
-    <section class="section section-light" id="skills">
-
-        <div class="section-heading">
-            <p>MY COMPETENCIES</p>
-            <h2>Skills & Expertise</h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <h3>Technical Skills</h3>
-                <p>Python</p>
-                <p>RStudio</p>
-                <p>Microsoft Excel</p>
-                <p>Microsoft Word & PowerPoint</p>
-                <p>Desmos & QM for Windows</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Professional Skills</h3>
-                <p>Data Analysis</p>
-                <p>Statistical Analysis</p>
-                <p>Problem Solving</p>
-                <p>Communication</p>
-                <p>Teamwork & Creative Thinking</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CERTIFICATES -->
-    <section class="section" id="certificates">
-
-        <div class="section-heading">
-            <p>LEARNING & DEVELOPMENT</p>
-            <h2>Certificates</h2>
-        </div>
-
-        <div class="experience-grid">
-
-            <div class="info-card">
-                <h3>Wawasan Karir dalam Bidang Data Analytics</h3>
-                <p>Digital Talent Scholarship 2026</p>
-                <p>Kementerian Komunikasi dan Digital</p>
-            </div>
-
-            <div class="info-card">
-                <h3>Pelatihan Python</h3>
-                <p>Institut Teknologi Sumatera</p>
-                <p>
-                    Adjust the training name to match
-                    the certificate you have.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section class="section section-light" id="projects">
-
-        <div class="section-heading">
-            <p>MY WORK</p>
-            <h2>Projects</h2>
-        </div>
-
-        <div class="info-card">
-            <h3>Data Analysis & Mathematical Projects</h3>
-            <p>
-                Documentation of data analysis, mathematical modeling, and computational projects completed
-                during my studies.
-            </p>
-            <p class="project-note">
-                Add images, descriptions, and links
-                to projects that you have actually created.
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
-
-        <div class="section-heading">
-            <p>GET IN TOUCH</p>
-            <h2>Contact Me</h2>
-        </div>
-
-        <p>
-            Thank you for visiting my portfolio. Please feel free to contact me for further information or collaboration opportunities.
-        </p>
-
-        <div class="contact-links">
-            <a href="mailto:vincarahmawati04@gmail.com">
-                Email Me
-            </a>
-
-            <a href="https://www.linkedin.com/in/vinca-rahmawati-ba5b3a265/"
-               target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Vinca Rahmawati. All Rights Reserved.</p>
-    </footer>
-
-
-    <script src="script.js"></script>
-
-</body>
-</html>
-
+<script src="script.js"></script>
+<script src="portfolio-enhancements.js"></script>
+</body></html>
