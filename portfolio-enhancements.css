@@ -76,3 +76,59 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/* ORGANIZATION PHOTO GALLERY */
+.portfolio-carousel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+.portfolio-track {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.portfolio-track::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-photo {
+    flex: 0 0 280px;
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.portfolio-photo img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-arrow {
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .portfolio-photo {
+        flex-basis: 230px;
+    }
+
+    .portfolio-photo img {
+        height: 160px;
+    }
+}
