@@ -349,3 +349,104 @@ html, body {
 
 
 
+
+/* PORTFOLIO GALLERY */
+.portfolio-gallery-section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.portfolio-carousel {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr) 38px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+}
+
+.portfolio-track {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.portfolio-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* SHOW 3 PHOTOS AT A TIME */
+.portfolio-photo {
+    flex: 0 0 calc((100% - 32px) / 3);
+    min-width: 0;
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+/* BMKG PHOTO */
+.portfolio-photo.bmkg-photo img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ORGANIZATION PHOTO */
+.portfolio-photo.standard-photo img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.portfolio-photo figcaption {
+    margin-top: 8px;
+}
+
+/* ARROW BUTTON */
+.portfolio-carousel .carousel-arrow {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .portfolio-photo {
+        flex-basis: calc((100% - 16px) / 2);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .portfolio-carousel {
+        grid-template-columns: 30px minmax(0, 1fr) 30px;
+        gap: 6px;
+    }
+
+    .portfolio-photo {
+        flex-basis: 100%;
+    }
+
+    .portfolio-photo.bmkg-photo img,
+    .portfolio-photo.standard-photo img {
+        height: 180px;
+    }
+}
