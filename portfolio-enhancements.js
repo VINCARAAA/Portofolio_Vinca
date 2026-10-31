@@ -47,3 +47,26 @@ uploadInput?.addEventListener('change',()=>{
   note.textContent = `Preview: ${file.name}. To publish this image, copy it into assets/certificates and update index.html.`;
   uploadPreview.append(img,note);
 });
+
+
+document.querySelectorAll(".portfolio-carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".portfolio-track");
+    const prev = carousel.querySelector(".carousel-arrow.prev");
+    const next = carousel.querySelector(".carousel-arrow.next");
+
+    if (!track || !prev || !next) return;
+
+    prev.addEventListener("click", () => {
+        track.scrollBy({
+            left: -300,
+            behavior: "smooth"
+        });
+    });
+
+    next.addEventListener("click", () => {
+        track.scrollBy({
+            left: 300,
+            behavior: "smooth"
+        });
+    });
+});
