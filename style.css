@@ -579,7 +579,8 @@ footer {
     background: #f3f5f8;
 }
 
-.asprak-item p {
+
+.asprakop-item p {
     padding: 10px 12px;
     margin: 0;
     font-size: 14px;
@@ -587,7 +588,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-	.asprak-gallery {
+	.asprakop-gallery {
         grid-template-columns: 1fr;
     }
 	.asprak-item img {
