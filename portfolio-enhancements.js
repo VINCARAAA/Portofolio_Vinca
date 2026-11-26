@@ -81,36 +81,3 @@ document.querySelectorAll(".portfolio-carousel").forEach((carousel) => {
 });
 
 
-document.querySelectorAll(".project-preview").forEach(button => {
-    button.addEventListener("click", () => {
-        const imageSrc = button.dataset.preview;
-
-        const previewWindow = document.createElement("div");
-        previewWindow.className = "image-lightbox";
-
-        previewWindow.innerHTML = `
-            <div class="lightbox-content">
-                <button class="lightbox-close" aria-label="Close">&times;</button>
-                <img src="${imageSrc}" alt="Project Poster Preview">
-            </div>
-        `;
-
-        document.body.appendChild(previewWindow);
-
-        previewWindow.addEventListener("click", event => {
-            if (
-                event.target === previewWindow ||
-                event.target.classList.contains("lightbox-close")
-            ) {
-                previewWindow.remove();
-            }
-        });
-
-        document.addEventListener("keydown", function closeOnEscape(event) {
-            if (event.key === "Escape") {
-                previewWindow.remove();
-                document.removeEventListener("keydown", closeOnEscape);
-            }
-        });
-    });
-});
